@@ -14,19 +14,21 @@ const Anime = (props) => {
             <img src={image} alt="" />
 
             <div className="description-container">
+                <h3><span></span>{name}</h3>
                 <div className="description">
-                    <h4>Name: <span>{name}</span></h4>
-                    <h5>Director: <span>{director}</span></h5>
-                    <h5>Languages: <span>{language}</span></h5>
-                    <h5>Run Time: <span>{runTime} min</span></h5>
-                    <h5>Ticket Price: <span>{ticketPrice}</span></h5>
+                    <p>Director: <span>{director}</span></p>
+                    <p>Languages: <span>{language}</span></p>
+                    <p>Run Time: <span>{runTime} min</span></p>
+                    <p>Ticket Price: $<span>{ticketPrice}</span></p>
                 </div>
-                <Rating
-                    emptySymbol="far fa-star icon-color"
-                    fullSymbol="fas fa-star icon-color"
-                    initialRating={ratting}
-                    readonly
-                ></Rating>
+                <div>
+                    <Rating
+                        emptySymbol="far fa-star icon-color"
+                        fullSymbol="fas fa-star icon-color"
+                        initialRating={ratting}
+                        readonly
+                    ></Rating>
+                </div>
                 <div className="btn">
                     <button onClick={() => { props.handleAddToWatchList(props.anime) }}>
                         {addIcon} Add to Watch List
