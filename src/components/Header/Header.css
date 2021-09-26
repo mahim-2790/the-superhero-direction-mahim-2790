@@ -1,9 +1,11 @@
 .header{
-    background-color: #333;
+    background-color: #082032;
     color: rgb(255, 255, 255);
     padding: 20px;
 }
-
+.header h1{
+    color: #FDB900;
+}
 .header p{
     margin: 8px 0px;
 }
