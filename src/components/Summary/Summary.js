@@ -3,8 +3,6 @@ import './Summary.css';
 
 const Summary = (props) => {
     const { watchList } = props;
-    console.log(watchList);
-
     let total = 0;
     let list = [];
     for (const anime of watchList) {
